@@ -1,0 +1,37 @@
+Caracteristicas Importantes
+
+1) Tiene un soporte para clases e interfaces
+Es decir  proporciona una sintaxis más clara y orientada
+a objetos para definir clases y interfaces, lo que facilita la creación de código más modular y mantenible.
+
+2) Tipado estático
+Es decir permite definir tipos estáticos para variables, parámetros de funciones, valores de retorno y más. 
+Esto ayuda a detectar errores de tipo durante el desarrollo, lo que puede mejorar la robustez y la legibilidad del código.
+
+3) Tipos Genéricos
+Admite la creación de funciones, clases y tipos genéricos, lo que permite escribir código reutilizable y flexible que puede
+funcionar con diferentes tipos de datos.
+
+4) Tipo de literal
+Este introduce tipos literales que permiten definir tipos que solo pueden tomar valores específicos. Esto proporciona una mayor
+seguridad y claridad en el código al limitar los valores válidos para ciertas variables o parámetros.
+
+
+Diferencias con JavaScript
+
+1) Características de orientación a objetos
+Primeramente TypeScript ofrece una sintaxis más completa y orientada a objetos para trabajar con clases e interfaces, lo que facilita la creación
+de aplicaciones más estructuradas y mantenibles en comparación con JavaScript.
+
+2) Tipado estático vs dinámico
+Debemos tener en ceuenta que JavaScript es un lenguaje de tipado dinámico, lo que significa que los tipos de variables pueden cambiar en tiempo de ejecución. 
+A diferencia de, TypeScript es de tipado estático, lo que proporciona una capa adicional de seguridad y legibilidad al código.
+
+3) Ecosistema de Desarrollo
+TypeScript tiene un ecosistema de desarrollo más amplio que JavaScript puro. Hay una variedad de herramientas, bibliotecas y marcos diseñados específicamente
+para trabajar con TypeScript, lo que puede mejorar la productividad y la calidad del código en comparación con el desarrollo en JavaScript puro.
+
+4) Tipado de Array
+En TypeScript, puedes definir tipos específicos de elementos de un array utilizando sintaxis de tipo de array (Type[]) o utilizando un enfoque más
+genérico (Array<Type>). Esto ayuda a garantizar que los arrays contengan solo ciertos tipos de elementos. En JavaScript, los arrays pueden contener
+elementos de diferentes tipos y no hay una forma integrada de especificar el tipo de elementos de un array.

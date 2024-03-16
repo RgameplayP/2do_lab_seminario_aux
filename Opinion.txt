@@ -1,0 +1,74 @@
+El laboratorio estuvo muy interesante y esta bien elavorado
+
+
+
+RECOMENDACIONES:
+
+Me hubiese gustado poder hacer una creacion de objetos en TypeScript y JavaScript con funciones 
+Estaria interesante poder implementar problemas donde sean de analisis, ejemplo:
+
+
+
+Ayuda al cajero a desarrollar un código en JavaScript para buscar a una persona llamada Pedrito en su lista de clientes.
+
+Descripción del problema:
+Un cajero de un banco necesita buscar rápidamente a un cliente llamado Pedrito en su lista de clientes. La lista de clientes del banco 
+se almacena en un arreglo en JavaScript. El cajero necesita un programa que busque a Pedrito en la lista de clientes y le muestre si Pedrito es 
+cliente del banco o no.
+
+PARA ESTO IMPLEMENTARIA DOS CASOS
+
+1) CASO 1: DONDE PEDRITO ESTE EN EL ARREGLO
+
+Para esto se debera generar un arreglo lleno de personas y en donde este pedrito diga "pedrito es cliente del banco"
+
+2) CASO 2: DONDE PEDRITO NO ESTE EN EL ARREGLO
+
+Para esto se debera generar un arreglo lleno de personas y SI NO ESTA pedrito diga "pedrito NO es cliente del banco"
+
+EJEMPLO DE SOLUCION:
+
+
+1) CASO 1: DONDE PEDRITO ESTE EN EL ARREGLO
+
+const listaClientes = [
+    { nombre: "Juan", cuenta: "123456" },
+    { nombre: "María", cuenta: "789012" },
+    { nombre: "Pedrito", cuenta: "345678" },
+    { nombre: "Ana", cuenta: "901234" }
+];
+
+function buscarClientePorNombre(nombre, lista) {
+    for (let cliente of lista) {
+        if (cliente.nombre === nombre) {
+            return `¡${nombre} es cliente del banco!`;
+        }
+    }
+    return `Lo siento, ${nombre} no es cliente del banco.`;
+}
+
+const resultadoBusqueda = buscarClientePorNombre("Pedrito", listaClientes);
+console.log(resultadoBusqueda);
+
+
+
+2) CASO 2: DONDE PEDRITO ESTE EN EL ARREGLO
+
+
+const listaClientes = [
+    { nombre: "Juan", cuenta: "123456" },
+    { nombre: "María", cuenta: "789012" },
+    { nombre: "Ana", cuenta: "901234" }
+];
+
+function buscarClientePorNombre(nombre, lista) {
+    for (let cliente of lista) {
+        if (cliente.nombre === nombre) {
+            return `¡${nombre} es cliente del banco!`;
+        }
+    }
+    return `Lo siento, ${nombre} no es cliente del banco.`;
+}
+
+const resultadoBusqueda = buscarClientePorNombre("Pedrito", listaClientes);
+console.log(resultadoBusqueda);
