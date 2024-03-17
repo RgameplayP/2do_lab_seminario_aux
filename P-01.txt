@@ -1,0 +1,64 @@
+Caracteristicas importantes
+
+1) Expresiones dentro de ${}:
+
+Se refiere a que  no solo se puede incluir el nombre de una variable, sino también 
+cualquier expresión JavaScript válida, como operaciones aritméticas o llamadas a funciones
+
+Ejemplo
+----------
+const x = 10;
+const y = 20;
+const suma = `La suma de ${x} y ${y} es ${x + y}`;
+console.log(suma); 
+----------
+
+2) Multilínea
+
+Significa que Los "template strings" permiten escribir cadenas de texto en varias 
+líneas sin necesidad de escapar caracteres especiales ni utilizar concatenación.
+
+Ejemplo
+----------
+const multilinea = `
+Esto es
+un texto
+en múltiples líneas`;
+console.log(multilinea);
+----------
+
+3) Anidamiento:
+
+Se puede anidar "template strings" dentro de otros "template strings" para construir estructuras más complejas.
+
+Ejemplo
+----------
+const nombre = "Juan";
+const despedida = `¡Adiós, ${nombre}!`;
+const mensaje = `Mensaje: ${saludo} ${despedida}`;
+console.log(mensaje);
+----------
+
+
+Como funcionan los "template strings"
+
+son una forma más flexible y legible de trabajar con cadenas de texto, permitiendo interpolación de variables, 
+multilínea y expresiones dentro de las cadenas. Esto los hace especialmente útiles para la generación de texto dinámico en 
+aplicaciones web y otros contextos de programación.
+
+
+----------
+
+Diferencias con las comillas simples y dobles
+
+1) En las comillas simples ('') y dobles (""), algunos caracteres especiales como \n (salto de línea) o \t (tabulación)
+necesitan ser escapados para que sean interpretados correctamente. En los "template strings", no es necesario escapar estos caracteres, 
+lo que facilita la escritura y lectura del código
+
+2) Con las comillas simples o dobles, para concatenar múltiples strings o variables dentro de una cadena necesitas usar el operador +. 
+Con los "template strings", puedes simplemente incluir las variables dentro de ${} y el texto se interpolara automáticamente
+
+3)  Debido a la capacidad de interpolación de variables y la multilínea sin necesidad de escapar caracteres especiales, los "template strings" 
+suelen ser más legibles y fáciles de mantener en comparación con las comillas simples o dobles, especialmente en código con muchas variables o
+contenido multilínea
+----------
